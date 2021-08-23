@@ -1,0 +1,97 @@
+:root{
+    --border:solid,1px,#ccc;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(227, 185, 240);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+header{
+    background-color: darkslateblue;
+    padding: 10px;
+    color: white;
+}
+main{
+    width: 700px;
+    margin: 100px auto;
+}
+
+button{
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    padding: 10px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    box-shadow: black 0px 2px 5px;
+}
+
+#display{
+    border: var(--border);
+    padding: 40px;
+    text-align: right;
+    font-size: 4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background-color: rgb(25,57,87);
+    color:cyan;
+    border-radius: 10px;
+}
+
+#editor{
+    border: var(--border);
+    padding:  10px;
+    display: grid;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+#editor #input-container{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 40% 20% 20% 20%;
+    align-items: end;
+    border: var(--border);
+}
+
+#editor input, #editor select{
+    padding: 10px;
+    border:none;
+    outline: none;
+    box-shadow: black 0px 2px 5px;
+    border-radius: 10px;
+}
+#editor button{
+    justify-items: right;
+    background-color: rgb(3, 19, 255);
+    color: white;
+    box-shadow: black 0px 2px 5px;
+}
+#items{
+    border: var(--border);
+    background-color: white;
+    border-radius: 10px;
+}
+#items .item{
+    display: grid;
+    grid-template-columns: 20% 69% 5%;
+    align-items: center;
+    padding: 10px;
+}
+#items .item:hover{
+    background-color: rgb(204, 204, 204);
+    font-size: 1.1em;
+}
+#items .item .currency{
+    margin-right: 5px;
+}
+#items .item:hover .currency{
+    color:rgb(0, 199, 17);
+    font-weight: bolder;
+}

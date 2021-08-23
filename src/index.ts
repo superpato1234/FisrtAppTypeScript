@@ -4,6 +4,7 @@ const inputCost     = <HTMLInputElement>document.querySelector('#cost');
 const inputCurrency:HTMLInputElement = <HTMLInputElement>document.querySelector('#currency');
 
 const expenses = new Expenses('USD') ;
+render();
 
 bAdd!.addEventListener('click', e=>{
     if(inputTitle!.value != '' && inputCost!.value != '' && !isNaN(parseFloat(inputCost.value))){
